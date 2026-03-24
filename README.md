@@ -178,7 +178,7 @@ This project is licensed under the **MIT License**.
 
 **Lokesh Kumawat**
 
-* GitHub: https://github.com/your-username
+* GitHub: https://github.comlokii2003
 * LinkedIn: (Add your profile)
 
 ---
