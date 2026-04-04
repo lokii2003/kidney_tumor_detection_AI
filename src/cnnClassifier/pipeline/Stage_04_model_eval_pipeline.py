@@ -11,10 +11,11 @@ STAGE_NAME = "Evaluation stage"
 
 class EvaluationPipeline:
     def __init__(self):
-        os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/lokii2003/kidney_tumor_detection_AI.mlflow"
+        pass
+        # os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/lokii2003/kidney_tumor_detection_AI.mlflow"
         # Set your DagsHub credentials (MLflow uses HTTP Basic Auth)
-        os.environ["MLFLOW_TRACKING_USERNAME"] = "lokii2003"
-        os.environ["MLFLOW_TRACKING_PASSWORD"] = "5caadabb5d09c044bad44caaf56d9fb6a2bf0122"
+        # os.environ["MLFLOW_TRACKING_USERNAME"] = "lokii2003"
+        # os.environ["MLFLOW_TRACKING_PASSWORD"] = "5caadabb5d09c044bad44caaf56d9fb6a2bf0122"
 
 
     def main(self):
@@ -23,4 +24,4 @@ class EvaluationPipeline:
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()
         evaluation.save_score()
-        evaluation.log_into_mlflow()
+        #evaluation.log_into_mlflow()
